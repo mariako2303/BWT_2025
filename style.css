@@ -1,1 +1,65 @@
-
+body {
+    display: flex; /* флексбокс для удобного выравнивания */
+    justify-content: center; /* в центре по главной оси */
+    align-items: center; /* в центре по вертикальной оси */
+    flex-direction: column; /* расположение по главной оси в колонну */
+   background: #8cb3ed;
+   font-family:  'Viaoda Libre', Static;
+ }
+.company-name {
+ font-size: 3em;
+}
+/* изображения в каталоге */
+.gallery-item img{
+    max-width: 100%; 
+    height: auto; /* сохранение пропорций */
+    display: block; /* элемент отображается как блочный, занимая всю доступную ширину строки и начиная с новой строки */
+}
+/* описание товара */
+.description {
+    padding: 10px 0; /* внутренние отступы  */
+    font-size: 16px;
+    color: #000000;
+}
+/* рамки в каталоге, контейнеры для фотографий */
+.gallery-item {
+    border: 1px solid #ccc; /* сплошная линия, цвет рамки серый, ширина 1 пиксель */
+    padding: 10px; /* отсупы от картинок*/
+    box-shadow: 2px 2px 5px gray;
+    transition: transform 0.3s; /* плавная трансформация при наведении за 0.3 секунды */
+    max-width: 250px; 
+    text-align: center;
+}
+/* что будет при наведении мыши */
+.gallery-item:hover {
+    transform: scale(1.05); /* увеличение размера на 5% */
+    box-shadow: gray;
+}
+/* контейнеры */
+.gallery {
+    display: flex; 
+    flex-wrap: wrap; /* перенос элементов на новую строку разрешен */
+    justify-content: center; 
+    gap: 15px; /* отступ между элементами */
+}
+.citation{
+  font-size: 2em;
+}
+.about_us1{
+    max-width: 50%; 
+    height: auto; 
+    display: block; 
+}
+.container {
+  display: block;
+  justify-content: center; 
+  align-items: flex-end;   /* вертикальное расположение внизу */
+  height: 150px;          
+}
+.about_us2 {
+    max-width: 50%;
+    width: 50%; 
+    height: auto;
+    display: block;
+}
+ 
